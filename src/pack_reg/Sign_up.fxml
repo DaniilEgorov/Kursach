@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="402.0" prefWidth="327.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="pack_reg.Registration">
+  <children>
+    <Button fx:id="butt" onAction="#log" text="Вход" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+    <HBox alignment="CENTER" prefHeight="353.0" prefWidth="299.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="35.0">
+      <children>
+        <VBox alignment="CENTER_LEFT" prefHeight="262.0" prefWidth="126.0" rotate="0.0" spacing="0.0">
+          <children>
+            <Label text="Логин" />
+            <TextField fx:id="login_new" prefWidth="200.0" />
+            <Label text="Пароль" />
+            <PasswordField fx:id="pass_new" prefWidth="200.0" />
+            <Label text="Повторите пароль" />
+            <PasswordField fx:id="pass_new_copy" prefWidth="200.0" />
+            <Label fx:id="label" prefHeight="16.0" prefWidth="126.0" text="" />
+            <Button mnemonicParsing="false" onAction="#show" prefWidth="126.0" text="Зарегистроваться">
+              <VBox.margin>
+                <Insets top="50.0" />
+              </VBox.margin>
+            </Button>
+          </children>
+          <padding>
+            <Insets />
+          </padding>
+        </VBox>
+      </children>
+    </HBox>
+  </children>
+</AnchorPane>

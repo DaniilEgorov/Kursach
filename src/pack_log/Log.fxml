@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="401.0" prefWidth="325.0" visible="true" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="pack_log.LogIn">
+  <children>
+    <Button fx:id="button" mnemonicParsing="false" onAction="#sign_up" text="Регистрация" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+    <HBox alignment="CENTER" prefHeight="352.0" prefWidth="225.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="35.0">
+      <children>
+        <VBox alignment="CENTER_LEFT" fillWidth="true" prefHeight="166.0" prefWidth="132.0">
+          <children>
+            <Label alignment="BOTTOM_LEFT" minHeight="14.0" prefHeight="14.0" prefWidth="42.0" text="Логин">
+              <font>
+                <Font size="12.0" fx:id="x1" />
+              </font>
+            </Label>
+            <TextField fx:id="login" alignment="CENTER_LEFT" prefWidth="118.0" text="" />
+            <Label alignment="BOTTOM_LEFT" font="$x1" minHeight="13.9998779296875" prefHeight="14.000099999997474" prefWidth="42.0" text="Пароль" />
+            <PasswordField fx:id="password" prefWidth="200.0" />
+            <Label fx:id="label" prefWidth="132.0" text="" />
+            <Button mnemonicParsing="false" onAction="#show" text="Войти">
+              <VBox.margin>
+                <Insets left="38.0" top="40.0" />
+              </VBox.margin>
+            </Button>
+          </children>
+        </VBox>
+      </children>
+    </HBox>
+  </children>
+</AnchorPane>

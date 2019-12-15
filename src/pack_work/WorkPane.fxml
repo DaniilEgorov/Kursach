@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pack_work.Work">
+    <children>
+        <Button fx:id="chooseButt" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#chooseFiles" text="Выбрать файл" />
+        <Button layoutX="14.0" layoutY="72.0" mnemonicParsing="false" onAction="#downloadFile" text="Загрузить" />
+        <TextField fx:id="field" layoutX="14.0" layoutY="104.0" prefWidth="200.0" />
+        <Label fx:id="label" layoutX="14.0" layoutY="135.0" />
+        <Button layoutX="14.0" layoutY="200.0" mnemonicParsing="false" onAction="#graph" text="График" />
+        <Button layoutX="14.0" layoutY="168.0" mnemonicParsing="false" onAction="#table" text="Таблица" />
+      <Label fx:id="user" layoutX="503.0" layoutY="14.0" text="Пользователь: " AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <Label fx:id="label1" layoutX="14.0" layoutY="46.0" />
+    </children>
+</AnchorPane>

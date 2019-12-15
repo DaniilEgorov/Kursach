@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="616.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pack_work.graph.Graph">
+   <children>
+      <LineChart fx:id="chart" layoutX="10.0" layoutY="15.0" legendSide="RIGHT" prefHeight="428.0" prefWidth="740.0" AnchorPane.bottomAnchor="173.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="15.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" side="LEFT" />
+        </yAxis>
+      </LineChart>
+       <DatePicker fx:id="start" layoutX="612.0" layoutY="546.0" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="612.0" />
+       <DatePicker fx:id="end" layoutX="612.0" layoutY="577.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="612.0" />
+      <Label fx:id="user" layoutX="633.0" layoutY="6.0" text="Пользователь: " AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="6.0" />
+      <Label layoutX="612.0" layoutY="524.0" text="Диапазон" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="612.0" />
+      <Button layoutX="15.0" layoutY="453.0" mnemonicParsing="false" onAction="#draw" text="Рисовать" AnchorPane.bottomAnchor="138.0" AnchorPane.leftAnchor="15.0" />
+      <ComboBox fx:id="cb_trend" layoutX="353.0" layoutY="511.0" prefWidth="150.0" value="Линейная" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="353.0" />
+      <ComboBox fx:id="cb_graph" layoutX="16.0" layoutY="511.0" prefWidth="150.0" value="Открытие" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="16.0" />
+      <Label layoutX="15.0" layoutY="489.0" text="Значение" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="15.0" />
+      <Label layoutX="353.0" layoutY="489.0" text="Линия тренда" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="353.0" />
+      <TextField fx:id="tick" layoutX="17.0" layoutY="571.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="17.0" />
+      <Label layoutX="15.0" layoutY="550.0" text="Тип валютной пары" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="15.0" />
+      <Button layoutX="353.0" layoutY="453.0" mnemonicParsing="false" onAction="#drawTrend" text="Добавить" AnchorPane.bottomAnchor="138.0" AnchorPane.leftAnchor="353.0" />
+      <ColorPicker fx:id="cp_graph" layoutX="192.0" layoutY="511.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="192.0" />
+      <Label layoutX="192.0" layoutY="489.0" text="Цвет" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="192.0" />
+      <Label layoutX="353.0" layoutY="550.0" text="Цвет" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="353.0" />
+      <ColorPicker fx:id="cp_trend" layoutX="353.0" layoutY="571.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="353.0" />
+      <Label fx:id="formula" layoutX="570.0" layoutY="457.0" AnchorPane.bottomAnchor="142.0" AnchorPane.leftAnchor="562.0" />
+      <Label layoutX="562.0" layoutY="550.0" text="Начало" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="562.0" />
+      <Label layoutX="562.0" layoutY="581.0" text="Конец" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="562.0" />
+   </children>
+</AnchorPane>
